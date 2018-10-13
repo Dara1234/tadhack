@@ -16,8 +16,10 @@ with codecs.open(os.path.abspath("/Users/dara/Desktop/Projects/python-extractor/
                 t = 'slow network'
             if t == 'sembilan' or t == 'negeri':
                 t = 'sembilan negeri'
-            if t == 'worst' or t == 'telco':
+            if t.rstrip() == 'worst' or t.rstrip() == 'telco':
                 t = 'worst telco'
+            if t.rstrip() == 'customer' or t.rstrip() == 'service':
+                t = 'customer service'
             topics_data.append(t.rstrip())
 
 for i in topics_data:

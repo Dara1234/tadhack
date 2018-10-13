@@ -6,4 +6,4 @@ To make this work first run:
 
 Then run:
 
-`calculating-percentage`
+`python2 calculating-percentage.py`

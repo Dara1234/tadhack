@@ -59,6 +59,10 @@ def prepare_text_for_lda(text):
     return tokens
 
 
+print('')
+print('=========================================')
+print('Topic Modeling Results')
+print('=========================================')
 text_data = []
 writer = csv.writer(
     open("/Users/dara/Desktop/Projects/python-extractor/new-dataset.csv", 'w'))
@@ -73,8 +77,10 @@ with codecs.open(os.path.abspath("/Users/dara/Desktop/Projects/python-extractor/
 
 
 # To hold the counts of each word
-
-
+print('')
+print('=========================================')
+print('Topic Confidence Level')
+print('=========================================')
 dictionary = corpora.Dictionary(text_data)
 
 corpus = [dictionary.doc2bow(text) for text in text_data]
